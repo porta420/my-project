@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><title>Submission Results</title></head>
+<body>
+    <h2>All Submissions</h2>
+    <table border="1">
+        <tr><th>Name</th><th>Country</th><th>Status</th><th>Goals</th></tr>
+        <tr th:each="p : ${people}">
+            <td th:text="${p.name}"></td>
+            <td th:text="${p.country}"></td>
+            <td th:text="${p.relationshipStatus}"></td>
+            <td th:text="${p.goals}"></td>
+        </tr>
+    </table>
+    <a href="/">Go Back</a>
+</body>
+</html>

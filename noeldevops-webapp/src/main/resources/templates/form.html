@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><title>Noel DevOps Form</title></head>
+<body>
+    <h1>Personal Info Submission</h1>
+    <form action="/submit" method="post" th:object="${person}">
+        Name: <input type="text" th:field="*{name}" /><br/>
+        Country: <input type="text" th:field="*{country}" /><br/>
+        Relationship Status: <input type="text" th:field="*{relationshipStatus}" /><br/>
+        Goals: <input type="text" th:field="*{goals}" /><br/>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
