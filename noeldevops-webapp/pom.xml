@@ -7,7 +7,7 @@
     <groupId>com.noeldevops</groupId>
     <artifactId>noeldevops</artifactId>
     <version>1.0.0</version>
-    <packaging>jar</packaging>
+    <packaging>war</packaging>
 
     <name>noeldevops</name>
     <description>Noel's custom web application</description>
